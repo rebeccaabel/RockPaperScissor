@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Rock Paper Scissors</title>
         <link rel="stylesheet" href="style.css">
-        <script src="app.js" charset="UTF-8"></script>
+
     </head>
     <body>
         <header>
@@ -22,17 +22,19 @@
         </div>
 
         <div class="choices">
-            <div class ="choice" id="r">
-                <img src="images/rock.png" alt="Rock" style="width:40px;height:40px;">
+            <div class ="choice" id="rock">
+                <p>&#129704</p>
+            </div>
+            <div class="choice" id="paper">
+                <p>&#128221</p>
+            </div>
+            <div class="choice" id="scissor">
+                <p>&#9986;&#65039;</p>
             </div>
         </div>
-        <div class="choice" id="p">
-            <img src="images/paper.png" alt="Paper" style="width:40px;height:40px;">
-        </div>
-        <div class="choice" id="s">
-            <img src="images/scissors.png" alt="Scissors" style="width:40px;height:40px;">
-        </div>
+        
 
         <p id="action-message">Make your move.</p>
     </body>
+    <script src="app.js" charset="UTF-8"></script>
 </html>
