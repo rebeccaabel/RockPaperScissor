@@ -7,18 +7,19 @@
 }
 
 body{
-    background-color: #24272E;
+    background-color: #1b1d22;
 }
 
 header{
-    background: white;
+    background: #1b1d22;
     padding: 20px;
 }
 
 header > h1{
-    color: rgb(78, 130, 151) ;
+    color: white ;
     text-align: center;
     font-family: 'Asap', sans-serif;
+    font-size: 100px;
 }
 
 .score-board{
@@ -35,7 +36,7 @@ header > h1{
 }
 
 .badge{
-    background: #E2584D;
+    background: #ff00ff;
     color: white;
     font-size: 14px;
     padding: 2px 10px;
@@ -74,7 +75,7 @@ header > h1{
 }
 
 .choice {
-    font-size: xx-large;
+    font-size: 150px;
     border: 5px solid white;
     margin:  15px;
     padding: 10px;
@@ -98,16 +99,16 @@ header > h1{
 
 .green-glow {
     border: 5px solid #4dcc7d;
-    box-shadow: 0 0 15px 15px #41a869;
+    box-shadow: 0 0 15px 10px #41a869;
 }
 .red-glow {
-    border: 5px solid rgb(214, 6, 6);
-    box-shadow: 0 0 15px 15px #d01115;
+    border: 5px solid rgb(255, 0, 0);
+    box-shadow: 0 0 15px 10px #a00104;
 }
 
 .yellow-glow {
-    border: 5px #ecec34;
-    box-shadow: 0 0 15px 15px #c5c52b;
+    border: 5px #ffff00;
+    box-shadow: 0 0 15px 10px #bebe00;
 }
 
 
