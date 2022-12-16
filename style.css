@@ -75,7 +75,7 @@ header > h1{
 
 .choice {
     font-size: xx-large;
-    border: 3px solid white;
+    border: 5px solid white;
     margin:  15px;
     padding: 10px;
     display: inline-block;
@@ -94,6 +94,20 @@ header > h1{
     font-weight: bold;
     font-size: 25px;
     margin-top: 20px;
+}
+
+.green-glow {
+    border: 5px solid #4dcc7d;
+    box-shadow: 0 0 15px 15px #41a869;
+}
+.red-glow {
+    border: 5px solid rgb(214, 6, 6);
+    box-shadow: 0 0 15px 15px #d01115;
+}
+
+.yellow-glow {
+    border: 5px #ecec34;
+    box-shadow: 0 0 15px 15px #c5c52b;
 }
 
 

@@ -2,7 +2,6 @@ let userScore = 0;
 let computerScore = 0;
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
-const scoreBoard_div = document.querySelector(".score-board");
 const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
@@ -19,7 +18,6 @@ function convertToReadable(letter) {
     if (letter === "r") return "Rock";
     if (letter === "p") return "Paper";
     return "Scissors"
-
 }
 
 function userWin(userChoice, computerChoice) {
@@ -27,22 +25,27 @@ function userWin(userChoice, computerChoice) {
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = convertToReadable(userChoice) + " (user)" + " beats " + convertToReadable(computerChoice) + " (comp) " + ". You Win!!"
-    //console.log("WIN");
+    document.getElementById(userChoice).classList.add('green-glow');
+    setTimeout(function() {document.getElementById(userChoice).classList.remove('green-glow'); }, 1500);
 }
+
+
 
 function userLose(userChoice, computerChoice) {
     computerScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = convertToReadable(userChoice) + " (user)" + " loses to " + convertToReadable(computerChoice) + " (comp) " + ". You lost :(" 
-    //console.log("LOST");
+    document.getElementById(userChoice).classList.add('red-glow');
+    setTimeout(function() {document.getElementById(userChoice).classList.remove('red-glow'); }, 1500);
 }
 
 function draw(userChoice, computerChoice) {
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = convertToReadable(userChoice) + " (user)" + " are the same  " + convertToReadable(computerChoice) + " (comp) " + " It is a DRAW!"
-    //console.log("DRAW");
+    document.getElementById(userChoice).classList.add('yellow-glow');
+    setTimeout(function() {document.getElementById(userChoice).classList.remove('yellow-glow'); }, 1500);
 }
 
 function game(userChoice) {
@@ -73,17 +76,15 @@ function game(userChoice) {
 function main() {
     rock_div.addEventListener('click', function() {
         game("r")
-        //console.log("r")
     })
 
     paper_div.addEventListener('click', function() {
         game("p")
-        //console.log("p")
     })
 
     scissor_div.addEventListener('click', function() {
         game("s")
-        //console.log("s")
     })
 }
+
 main();
